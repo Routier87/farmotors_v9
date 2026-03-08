@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-protect-staff="true">
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo.png" alt="Logo FarmOtor">
+    <div>
+      <h1 class="logo-title">FarmOtor's Transport</h1>
+      <div class="muted">VTC Euro Truck Simulator 2</div>
+    </div>
+  </div>
+  <nav class="menu">
+<a href="index.html" class="menu-btn">Accueil</a>
+<a href="convois.html" class="menu-btn">Convois</a>
+<a href="chauffeurs.html" class="menu-btn">Chauffeurs</a>
+<a href="stats.html" class="menu-btn">Statistiques</a>
+<a href="programme.html" class="menu-btn" data-staff-only="true">Programme Convoi</a>
+<a href="candidature-trucky.html" class="menu-btn">Candidature Trucky</a>
+<a href="candidature-trucksbook.html" class="menu-btn">Candidature TrucksBook</a>
+<a href="admin.html" class="menu-btn admin" data-staff-only="true">Panel Admin</a>
+</nav>
+</header>
+
+<section class="page-title">
+  <h2>Panel Admin</h2>
+  <p class="muted">Supprimer les convois créés et gérer les candidatures Trucky / TrucksBook.</p>
+</section>
+
+<section class="grid">
+  <div style="width:100%;max-width:1180px">
+    <h3>🚛 Convois créés</h3>
+    <div id="adminConvoys" class="list"></div>
+  </div>
+</section>
+
+<section class="grid">
+  <div style="width:100%;max-width:1180px">
+    <h3>📩 Candidatures Trucky</h3>
+    <div id="admin-trucky" class="list"></div>
+  </div>
+</section>
+
+<section class="grid">
+  <div style="width:100%;max-width:1180px">
+    <h3>📩 Candidatures TrucksBook</h3>
+    <div id="admin-trucksbook" class="list"></div>
+  </div>
+</section>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

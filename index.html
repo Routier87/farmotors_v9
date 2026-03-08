@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmOtor's Transport V9 Ultra Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo.png" alt="Logo FarmOtor">
+    <div>
+      <h1 class="logo-title">FarmOtor's Transport</h1>
+      <div class="muted">VTC Euro Truck Simulator 2</div>
+    </div>
+  </div>
+  <nav class="menu">
+<a href="index.html" class="menu-btn">Accueil</a>
+<a href="convois.html" class="menu-btn">Convois</a>
+<a href="chauffeurs.html" class="menu-btn">Chauffeurs</a>
+<a href="stats.html" class="menu-btn">Statistiques</a>
+<a href="programme.html" class="menu-btn" data-staff-only="true">Programme Convoi</a>
+<a href="candidature-trucky.html" class="menu-btn">Candidature Trucky</a>
+<a href="candidature-trucksbook.html" class="menu-btn">Candidature TrucksBook</a>
+<a href="admin.html" class="menu-btn admin" data-staff-only="true">Panel Admin</a>
+</nav>
+</header>
+
+<section class="hero">
+  <div class="hero-card">
+    <span class="badge">V9 Ultra Pro</span>
+    <h2>Version complète avec logo, bannière, admin et candidatures</h2>
+    <p class="muted">Connexion Discord directe, candidatures séparées Trucky / TrucksBook, suppression des convois et validation / refus dans le panel admin.</p>
+    <div class="buttons">
+      <a class="btn btn-green" href="https://trucksbook.eu/company/195588" target="_blank">TrucksBook</a>
+      <a class="btn btn-green" href="https://hub.truckyapp.com/vtchub" target="_blank">Trucky</a>
+      <a class="btn btn-blue" href="https://discord.gg/CVM8sWJvB2" target="_blank">Discord</a>
+      <a class="btn btn-gold" id="discordLoginBtn" href="#">Se connecter à Discord</a>
+      <button class="btn btn-red" id="logoutBtn">Déconnexion</button>
+    </div>
+    <div id="userBadge" class="buttons"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="cards">
+    <div class="card"><h3>📝 Candidatures</h3><p>Pages séparées Trucky et TrucksBook</p></div>
+    <div class="card"><h3>⚙ Panel Admin</h3><p>Supprimer les convois et gérer les candidatures</p></div>
+    <div class="card"><h3>👍 Votes</h3><p>Un seul vote par compte Discord</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="panel">
+    <h2>📢 Dernier convoi</h2>
+    <div id="lastConvoy" class="card">Aucun convoi pour le moment</div>
+  </div>
+</section>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
